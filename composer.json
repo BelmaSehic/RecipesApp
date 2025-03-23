@@ -1,0 +1,15 @@
+{
+    "name": "korisnik/recipes-app",
+    "autoload": {
+        "psr-4": {
+            "Korisnik\\RecipesApp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "BelmaSehic",
+            "email": "belma.sehic@stu.ibu.edu.ba"
+        }
+    ],
+    "require": {}
+}

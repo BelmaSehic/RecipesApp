@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Detail</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css">
+</head>
+<body>
+
+  <div class="container mt-5" id="recipeContainer">
+    <h1 id="recipeTitle">Example Recipe</h1>
+    <div class="row">
+      <div class="col-lg-4">
+        <img
+          id="recipeImage"
+          src="img/recipe1.jpg"
+          alt="Recipe Image"
+          class="img-fluid rounded shadow"
+        />
+      </div>
+      <div class="col-lg-8">
+        <p>
+          <i class="fas fa-info-circle"></i>
+          <span id="recipeDescription">A classic Italian pasta dish with rich meat sauce. A delicious and hearty meal perfect for dinner!</span>
+        </p>
+        <p>
+          <i class="fas fa-clock"></i> Preparation time:
+          <b id="recipePrepTime">30 min</b>
+        </p>
+        <p><i class="fas fa-user"></i> Added by: <b id="recipeAuthor">John Doe</b></p>
+        <p>
+          <i class="fas fa-calendar-alt"></i> Added on: <b id="recipeAddedOn">March 15, 2025</b>
+        </p>
+        <p><i class="fas fa-tag"></i> Category: <b id="recipeCategory">Italian</b></p>
+        <h2><i class="fas fa-list"></i> Instructions:</h2>
+        <p id="recipeInstructions">
+          1. Heat a pan and cook the ground beef until browned.<br>
+          2. Add chopped onions, garlic, and cook until soft.<br>
+          3. Stir in tomato sauce, salt, pepper, and cook for 20 minutes.<br>
+          4. Serve over cooked spaghetti and garnish with Parmesan cheese.
+        </p>
+        <button id="backToRecipes" class="btn btn-primary">
+          <i class="fas fa-arrow-left"></i> Back to recipes
+        </button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
