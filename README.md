@@ -19,7 +19,7 @@ Milestone 1 focuses on the static frontend, backend skeleton (folders), and data
 - Includes tables, relationships, and constraints to ensure data integrity.
 
 ![image](https://github.com/user-attachments/assets/0ebc6e7e-96e2-4897-8ff8-c6b265e0e2cd)
-MILESTONE 2: Database and DAO Layer Implementation (06.04.2025)
+## MILESTONE 2: Database and DAO Layer Implementation (06.04.2025)
 Milestone 2 focuses on implementing the database structure and the DAO layer. Key achievements in this phase include:
 
 ### 📌 .sql file uploaded (which is already done in milestone 1)**
