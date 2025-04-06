@@ -27,6 +27,8 @@ Milestone 2 focuses on implementing the database structure and the DAO layer. Ke
 -Implemented DAO layer (basic CRUD operations) with classes inheriting from BaseDao for database interactions without having to rewrite the code.
 ### 📌 Routes & Services**
 -Defined the necessary routes and services for testing database operations.
+![image](https://github.com/user-attachments/assets/7b431f7c-ad23-4be0-87ae-02c4ad40f2dd)
+
 
 Milestone 2 waiting for approval.
 
