@@ -25,9 +25,13 @@ class FavoriteService extends BaseService
         return $this->dao->isFavorite($userId, $recipeId);
     }
 
+
     public function getUserFavorites($userId)
     {
         return $this->dao->getUserFavorites($userId);
     }
+
+
 }
+
 ?>

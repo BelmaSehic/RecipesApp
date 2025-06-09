@@ -22,5 +22,9 @@ class UsersDao extends BaseDao
         $stmt->execute([':id' => $id]);
         return $stmt->rowCount() > 0;
     }
+
+
+
+
 }
 ?>

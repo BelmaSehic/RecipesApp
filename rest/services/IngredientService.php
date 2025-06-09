@@ -8,5 +8,8 @@ class IngredientService extends BaseService{
         parent::__construct(new IngredientsDao);
 
     }
+
+
 }
+
 ?>

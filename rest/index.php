@@ -1,6 +1,9 @@
 <?php
 
-require_once "vendor/autoload.php";
+require_once "../vendor/autoload.php";
+require_once "./helpers.php";
+require_once "./JwtHelper.php";
+require_once "../cors.php";
 
 require_once("services/UserService.php");
 require_once("services/RecipeService.php");
@@ -14,11 +17,11 @@ Flight::register("category_service", "CategoryService");
 Flight::register("favorite_service", "FavoriteService");
 Flight::register("ingredient_service", "IngredientService");
 
-require_once __DIR__ . "/routes/UsersRoutes.php";
-require_once __DIR__ . "/routes/RecipesRoutes.php";
-require_once __DIR__ . "/routes/CategoryRoutes.php";
-require_once __DIR__ . "/routes/FavoritesRoutes.php";
-require_once __DIR__ . "/routes/IngredientsRoutes.php";
+require_once "routes/UsersRoutes.php";
+require_once "routes/RecipesRoutes.php";
+require_once "routes/CategoryRoutes.php";
+require_once "routes/FavoritesRoutes.php";
+require_once "routes/IngredientsRoutes.php";
 
 Flight::before('start', function (&$params, &$output) {
     $excludedRoutesStartsWith = ["/login", "/register", "/recipes", "/recipe/", "/users"];
@@ -30,12 +33,21 @@ Flight::before('start', function (&$params, &$output) {
         }
     }
 
-});
+    $headers = apache_request_headers();
+    if (!isset($headers['Authorization'])) {
+        Flight::json(["message" => "Unauthorized"], 401);
+        Flight::stop();
+    }
 
-Flight::route('GET /test', function () {
-    echo "Test route is working!";
-});
+    $token = substr($headers['Authorization'], 7);
+    $userId = getUserIdFromToken($token);
+    if (!$userId) {
+        Flight::json(["message" => "Authorization token is not valid"], 403);
+        Flight::stop();
+    }
 
+    Flight::set('user', $userId);
+});
 
 Flight::start();
 

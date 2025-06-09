@@ -8,5 +8,6 @@ class CategoriesDao extends BaseDao
     {
         parent::__construct("categories");
     }
+
 }
 ?>

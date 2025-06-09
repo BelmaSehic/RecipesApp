@@ -4,11 +4,11 @@
     "title": "Food - API Documentation",
     "version": "1.0.0",
     "contact": {
-      "email": "amr@gmail.com"
+      "email": "belma@gmail.com"
     }
   },
   "paths": {
-    "/food-recipe-app/rest/recipes/me": {
+    "/RecipesApp/rest/recipes/me": {
       "get": {
         "tags": ["Recipes"],
         "summary": "Get recipes for current user",
@@ -33,7 +33,7 @@
         }
       }
     },
-    "/food-recipe-app/rest/recipes": {
+    "/RecipesApp/rest/recipes": {
       "get": {
         "tags": ["Recipes"],
         "summary": "Get all recipes",
@@ -86,7 +86,7 @@
         }
       }
     },
-    "/food-recipe-app/rest/recipe/{id}": {
+    "/RecipesApp/rest/recipe/{id}": {
       "get": {
         "tags": ["Recipes"],
         "summary": "Get recipes by ID",
@@ -190,7 +190,7 @@
       }
     },
 
-    "/food-recipe-app/rest/categories": {
+    "/RecipesApp/rest/categories": {
       "get": {
         "tags": ["Categories"],
         "summary": "Get all categories",
@@ -211,7 +211,7 @@
         }
       }
     },
-    "/food-recipe-app/rest/category/{id}": {
+    "/RecipesApp/rest/category/{id}": {
       "get": {
         "tags": ["Categories"],
         "summary": "Get category by ID",
@@ -348,7 +348,7 @@
         }
       }
     },
-    "/food-recipe-app/rest/login": {
+    "/RecipesApp/rest/login": {
       "post": {
         "tags": ["Authentication"],
         "summary": "User login",
@@ -393,7 +393,7 @@
         }
       }
     },
-    "/food-recipe-app/rest/me": {
+    "/RecipesApp/rest/me": {
       "get": {
         "tags": ["User"],
         "summary": "Get current user",
@@ -472,7 +472,7 @@
         }
       }
     },
-    "/food-recipe-app/rest/users": {
+    "/RecipesApp/rest/users": {
       "get": {
         "tags": ["User"],
         "summary": "Get all users",
@@ -493,7 +493,7 @@
         }
       }
     },
-    "/food-recipe-app/rest/user/{id}": {
+    "/RecipesApp/rest/user/{id}": {
       "get": {
         "tags": ["User"],
         "summary": "Get user by ID",
@@ -593,7 +593,7 @@
         }
       }
     },
-    "/food-recipe-app/rest/ingredients": {
+    "/RecipesApp/rest/ingredients": {
       "get": {
         "tags": ["Ingredients"],
         "summary": "Get all ingredients",
@@ -614,7 +614,7 @@
         }
       }
     },
-    "/food-recipe-app/rest/ingredient/{id}": {
+    "/RecipesApp/rest/ingredient/{id}": {
       "get": {
         "tags": ["Ingredients"],
         "summary": "Get ingredient by ID",
@@ -751,7 +751,7 @@
         }
       }
     },
-    "/food-recipe-app/rest/favorites": {
+    "/RecipesApp/rest/favorites": {
       "get": {
         "tags": ["Favorites"],
         "summary": "Get all favorites",
@@ -772,7 +772,7 @@
         }
       }
     },
-    "/food-recipe-app/rest/favorite/{id}": {
+    "/RecipesApp/rest/favorite/{id}": {
       "get": {
         "tags": ["Favorites"],
         "summary": "Get favorite by ID",
